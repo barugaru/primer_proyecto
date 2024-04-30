@@ -12,6 +12,7 @@
 
 h1{
     color: blue;
+    font-size: 25px;
 }
 
 /* Tablet */
@@ -19,6 +20,7 @@ h1{
 
     h1 {
         color: aqua;
+        font-size: 30px;
     }
 }
 
@@ -27,6 +29,7 @@ h1{
 
     h1{
         color: red;
+        font-size: 40px;
     }
     
 }
