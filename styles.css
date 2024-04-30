@@ -1,0 +1,31 @@
+* {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop */
+@media only screen and (min-width 768px) {
+
+    h1{
+        color: red;
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (min-width:600px){
+
+    h1 {
+        color: aqua;
+    }
+}
+
+
+/* Phone */
+
+h1{
+    color: blue;
+}
