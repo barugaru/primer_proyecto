@@ -1,12 +1,22 @@
 * {
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 25px;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;      
 }
 
+body{
+    padding: 100px;
+}
 
+rt {
+    font-size: 0.6em;
+    opacity: 0;
+}
 
 /* Phone */
 

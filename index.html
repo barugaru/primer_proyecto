@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hola Mundo!</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nostrum soluta nesciunt deleniti sint? Saepe dolores at sint beatae quasi placeat similique fugit praesentium? Laborum ipsa aut quidem nam quia?</p>
+<h1 id="rojo"></h1>
+<p><ruby>今度<rt id="furigana">こんど</rt></ruby>の<ruby>日曜日<rt>にちようび</rt></ruby><ruby>富士山<rt>ふじさん</rt></ruby>を<ruby>登<rt>のぼ</rt></ruby>りました。</p>
+
+<button id="boton" type="button" value="mostrar" onclick="mostrarYOcultar()">Mostrar furigana</button>
+
+<script>
+    
+function mostrar() {
+  const mostrarRt = document.getElementsByTagName("rt");
+  for (let i = 0; i < mostrarRt.length; i++) {
+    mostrarRt[i].style.opacity = 1;
+  }
+}
+
+function ocultar() {
+  const ocultarRt = document.getElementsByTagName("rt");
+  for (let i = 0; i < ocultarRt.length; i++) {
+    ocultarRt[i].style.opacity = 0;
+  }
+}
+    
+    function mostrarYOcultar() {
+  let boton = document.getElementById("boton");
+  if (boton.value == "mostrar") {
+    mostrar();
+    boton.value = "ocultar";
+    boton.innerHTML = 'Ocultar Furigana';
+  } else {
+    ocultar();
+    boton.value = "mostrar";
+    boton.innerHTML = 'Mostrar Furigana';
+  }
+}
+
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </body>
 </html>
