@@ -18,8 +18,8 @@ nav {
 }
 
 section {
-    padding: 50px 0;
-    max-width:900px;
+    padding-top: 30px;
+    max-width:800px;
     margin: auto;
 }
 
@@ -47,16 +47,38 @@ label {
 /* Phone */
 
 h1{
-    color: blue;
+    font-size: 28px;
+}
+
+h2 {
     font-size: 25px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 21px;
 }
 
 /* Tablet */
 @media only screen and (min-width:600px){
 
     h1 {
-        color: aqua;
         font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 25px;
     }
 }
 
@@ -64,8 +86,18 @@ h1{
 @media only screen and (min-width: 768px) {
 
     h1{
-        color: red;
         font-size: 40px;
     }
+
+    h2 {
+        font-size: 35px;
+    }
     
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
 }
